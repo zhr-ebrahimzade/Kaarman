@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7219559ca6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/account.css" />
+    <title>Your Account-Kaarman</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-scroll fixed-top">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="#">
+          <span class="logo col-4"
+            ><i class="fa-solid fa-user-gear"></i>
+            Kaarman
+          </span>
+        </a>
+
+        <!-- Left links -->
+
+        <div class="d-flex align-items-center">
+          <button
+            type="button"
+            onclick="window.location.href='tasklist.html';"
+            class="log-sign"
+          >
+            Book a Task
+          </button>
+          <button
+            type="button"
+            onclick="window.location.href='#';"
+            class="become"
+          >
+            My Task
+          </button>
+          <button
+            type="button"
+            onclick="window.location.href='UpgradeToKaarman.html';"
+            class="become"
+          >
+            Upgrade to tasker
+          </button>
+        </div>
+      </div>
+
+      <!-- Container wrapper -->
+    </nav>
+    <!--     <hr />
+    <nav class="navbar-expand-lg">
+      <div class="navbar-custom">
+        <div class="logo-wrap">
+          <span class="navbar-brand logo"
+            ><i class="fa-solid fa-user-gear"></i>
+            Kaarman
+          </span>
+        </div>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Book a Task</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Tasks</a>
+            </li>
+            <li class="nav-item account">
+              <a class="nav-link" href="#"><strong>Account</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/UpgradeToKaarman.html"
+                >Upgrade</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span><i class="fa-solid fa-bars"></i></span>
+        </button>
+      </div>
+    </nav>
+    <hr /> -->
+    <section class="content-sec">
+      <div class="wrapper">
+        <div class="content">
+          <div class="d-flex">
+            <div
+              class="nav flex-column nav-pills me-3"
+              id="v-pills-tab"
+              role="tablist"
+              aria-orientation="vertical"
+            >
+              <button
+                class="nav-link active"
+                id="v-pills-profile-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-profile"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-profile"
+                aria-selected="true"
+              >
+                Profile
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-password-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-password"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-password"
+                aria-selected="false"
+              >
+                Password
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-notif-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-notif"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-notif"
+                aria-selected="false"
+              >
+                Notifications
+              </button>
+
+              <button
+                class="nav-link"
+                id="v-pills-billing-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-billing"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-billing"
+                aria-selected="false"
+              >
+                Billing Info
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-cancel-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-cancel"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-cancel"
+                aria-selected="false"
+              >
+                Cancel a Task
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-balance-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-balance"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-balance"
+                aria-selected="false"
+              >
+                Account Balance
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-transactions-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-transactions"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-transaction"
+                aria-selected="false"
+              >
+                Transactions
+              </button>
+              <button
+                class="nav-link"
+                id="v-pills-deactive-tab"
+                data-bs-toggle="pill"
+                data-bs-target="#v-pills-deactive"
+                type="button"
+                role="tab"
+                aria-controls="v-pills-deactive"
+                aria-selected="false"
+              >
+                Deactive
+              </button>
+            </div>
+            <div class="tab-content" id="v-pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="v-pills-profile"
+                role="tabpanel"
+                aria-labelledby="v-pills-profile-tab"
+              >
+                <div class="container">
+                  <h3><strong>Profile</strong></h3>
+                  <hr />
+                  <div class="row gutters-sm">
+                    <div class="col-md-4 mb-3">
+                      <div class="card">
+                        <div class="card-body">
+                          <div
+                            class="d-flex flex-column align-items-center text-center"
+                          >
+                            <img
+                              src="https://bootdey.com/img/Content/avatar/avatar7.png"
+                              alt="Admin"
+                              class="rounded-circle"
+                              width="150"
+                            />
+                            <div class="mt-3">
+                              <h4>Zahra Eb</h4>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star checked"></span>
+                              <span class="fa fa-star"></span>
+                              <span class="fa fa-star"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card mb-3">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <h6 class="mb-0">Full Name</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">Zahra Eb</div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <h6 class="mb-0">Email</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                              eb.zahra99@gmail.com
+                            </div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <h6 class="mb-0">Phone</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                              09217409654
+                            </div>
+                          </div>
+                          <hr />
+
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <h6 class="mb-0">ID</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">970216660</div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <h6 class="mb-0">Zip Code</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">243567</div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-3">
+                              <h6 class="mb-0">Address</h6>
+                            </div>
+                            <div class="col-sm-9 text-secondary">
+                              Bushehr, SaadAbad
+                            </div>
+                          </div>
+                          <hr />
+                          <div class="row">
+                            <div class="col-sm-12">
+                              <a
+                                class="btn btn-info"
+                                target="__blank"
+                                href="../html/profile-edit.html"
+                                >Edit</a
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-password"
+                role="tabpanel"
+                aria-labelledby="v-pills-password-tab"
+              >
+                <div>
+                  <h2>Change Password</h2>
+                </div>
+                <hr />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-notif"
+                role="tabpanel"
+                aria-labelledby="v-pills-notif-tab"
+              >
+                <div>
+                  <h2>Notifications</h2>
+                </div>
+                <hr />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-billing"
+                role="tabpanel"
+                aria-labelledby="v-pills-billing-tab"
+              >
+                <div>
+                  <h2>Edit Billing Info</h2>
+                </div>
+                <hr />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-cancel"
+                role="tabpanel"
+                aria-labelledby="v-pills-cancel-tab"
+              >
+                <div>
+                  <h2>Cancel a Task</h2>
+                </div>
+                <hr />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-balance"
+                role="tabpanel"
+                aria-labelledby="v-pills-balance-tab"
+              >
+                <div>
+                  <h2>Account Balance</h2>
+                </div>
+                <hr />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-transaction"
+                role="tabpanel"
+                aria-labelledby="v-pills-transactions-tab"
+              >
+                <div>
+                  <h2>Transaction History</h2>
+                </div>
+                <hr />
+              </div>
+              <div
+                class="tab-pane fade"
+                id="v-pills-deactive"
+                role="tabpanel"
+                aria-labelledby="v-pills-deactive-tab"
+              >
+                <div>
+                  <h2>Account Deactivation</h2>
+                </div>
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="../js/account.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/sign-up.css" />
+    <script
+      src="https://kit.fontawesome.com/7219559ca6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kaarman</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><i class="fa-solid fa-user-gear"></i>Kaarman</div>
+      <div class="form">
+        <form action="">
+          <div class="form-item">
+            <input class="input" type="text" placeholder="Name" name="name" />
+          </div>
+          <div class="form-item">
+            <input
+              class="input"
+              type="text"
+              placeholder="Last name"
+              name="lastName"
+            />
+          </div>
+          <div class="form-item">
+            <input
+              class="input"
+              type="email"
+              placeholder="Email"
+              name="email"
+            />
+          </div>
+
+          <div class="form-item">
+            <input
+              class="input"
+              type="password"
+              placeholder="Password"
+              name="password"
+            />
+          </div>
+          <div class="form-item policy-container">
+            <input class="checkbox" type="checkbox" id="policy" name="policy" />
+            <label for="policy"
+              >By signing up I accept the site's <a href="#">policy</a>.</label
+            >
+          </div>
+          <div class="form-item">
+            <button
+              class="sign-up"
+              onclick="window.location.href='dashboard.html'"
+            >
+              Sign up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

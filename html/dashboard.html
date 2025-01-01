@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/7219559ca6.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <!-- Navbar ************************************************************* -->
+
+    <nav class="navbar navbar-expand-lg navbar-scroll fixed-top">
+      <!-- Container wrapper -->
+      <div class="container">
+        <!-- Navbar brand -->
+        <a class="navbar-brand me-2" href="#">
+          <span class="logo col-4"
+            ><i class="fa-solid fa-user-gear"></i>
+            Kaarman
+          </span>
+        </a>
+
+        <!-- Left links -->
+
+        <div class="d-flex align-items-center">
+          <button
+            type="button"
+            onclick="window.location.href='account.html';"
+            class="log-sign"
+          >
+            Profile
+          </button>
+          <button
+            type="button"
+            onclick="window.location.href='tasklist.html';"
+            class="become"
+          >
+            Book a Task
+          </button>
+        </div>
+      </div>
+
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Container wrapper -->
+
+    <!-- Header*********************************************** -->
+    <header>
+      <div class="header">
+        <div class="header-background">
+          <div class="header-content">
+            <h2>Book Your Next Task</h2>
+
+            <form class="form">
+              <div class="input">
+                <div class="input-icons">
+                  <i class="fa-solid fa-magnifying-glass icon"></i>
+                  <input
+                    maxlength="150"
+                    class="input-field"
+                    type="text"
+                    autocomplete="off"
+                    placeholder="Describe one task, e.g. fix the hole in my wall"
+                  />
+                </div>
+              </div>
+              <ul class="ul container">
+                <div class="row">
+                  <li class="col">
+                    <button class="search-btn">Help Moving</button>
+                  </li>
+                  <li class="col">
+                    <button class="search-btn">Mounting</button>
+                  </li>
+                  <li class="col">
+                    <button class="search-btn">Cleaning</button>
+                  </li>
+                  <li class="col">
+                    <button id="dots" class="search-btn">
+                      Electrical Help
+                    </button>
+                  </li>
+                  <div id="dots">...</div>
+                </div>
+
+                <div id="more">
+                  <div class="row">
+                    <li class="col">
+                      <button class="search-btn">Yard Work Services</button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Home Repairs</button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Plumbing</button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Delivery</button>
+                    </li>
+                  </div>
+                  <div class="row">
+                    <li class="col">
+                      <button class="search-btn">
+                        Carpentry & Construction
+                      </button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Home Repairs</button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Plumbing</button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Delivery</button>
+                    </li>
+                  </div>
+                  <div class="row">
+                    <li class="col">
+                      <button class="search-btn">Running Your Errands</button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Organization</button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Packing and Unpacking</button>
+                    </li>
+                    <li class="col">
+                      <button class="search-btn">Personal Assistant</button>
+                    </li>
+                  </div>
+                </div>
+              </ul>
+              <button id="myBtn">See more</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="wrapper">
+        <div class="partners">
+          <h2>Partnered with</h2>
+          <div class="partners-ul">
+            <ul>
+              <li class="logo-list">
+                <img src="../images/refah.png" alt="Refah company's logo" />
+                <span>Refah</span>
+              </li>
+              <li class="logo-list">
+                <img src="../images/ofogh.png" alt="ofogh company's logo" />
+                <span>Koorosh</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section>
+      <div class="special-offers">
+        <div>
+          <i class="fa-solid fa-person-carry-box"></i>
+        </div>
+        <div>
+          <h1>How do you use your Kaarman account?</h1>
+          <h2>Select below to receive special offers!</h2>
+          <div class="button">
+            <ul>
+              <li><button type="click">Personal</button></li>
+              <button type="click">Business</button
+              ><button type="click">Both</button>
+              <li><button type="click">Dismiss</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <script src="../js/dashboard.js"></script>
+  </body>
+</html>

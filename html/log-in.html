@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/log-in.css" />
+    <script
+      src="https://kit.fontawesome.com/7219559ca6.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Kaarman</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo"><i class="fa-solid fa-user-gear"></i> Kaarman</div>
+
+      <form class="form">
+        <div class="form-item">
+          <input class="input" type="email" placeholder="Email" name="email" />
+        </div>
+        <div class="form-item">
+          <input
+            class="input"
+            type="password"
+            placeholder="Password"
+            name="password"
+          />
+        </div>
+        <button
+          class="log-in form-item input"
+          onclick="window.location.href='dashboard.html'"
+        >
+          Log in
+        </button>
+      </form>
+      <div class="forget-pass"><a href="#">Forgot Password?</a></div>
+    </div>
+  </body>
+</html>
