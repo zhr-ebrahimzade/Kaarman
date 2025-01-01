@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+body {
+  color: #222831;
+}
+/* NAVBAR */
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar {
+  background: #222831;
+}
+/* HEADER */
+header {
+  background-color: #e6e2e2;
+  padding: 60px;
+}
+header h1 {
+  color: #305973;
+  margin-top: 100px;
+  text-align: center;
+  font-weight: bold;
+}
+.back {
+  margin: 20px 10px;
+  padding: 20px;
+}
+
+.back-btn {
+  background-color: #ef7e56;
+  max-width: 12%;
+  padding: 10px;
+  color: white;
+
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 150ms all ease-in-out;
+}
+.back-btn:hover {
+  background-color: #ef4e13;
+  color: white;
+}
+
+/* Taskers */
+.card {
+  width: 300px;
+  height: 650px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 15px 15px 0 0;
+  box-shadow: 0 3px 5px rgb(0, 0, 0, 0.3);
+}
+.card-img {
+  background-color: #ef7e56;
+  height: 200px;
+  margin-bottom: 15px;
+  background-size: cover;
+}
+.tasker-1 {
+  background: url("../images/bookatask.jpg");
+}
+.tasker-2 {
+  background: url("../images/bookatask.jpg");
+}
+.tasker-3 {
+  background: url("../images/prfile-pic/Arash\ Mohammadi.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.tasker-4 {
+  background: url("../images/bookatask.jpg");
+}
+.tasker-5 {
+  background: url("../images/bookatask.jpg");
+}
+.tasker-6 {
+  background: url("../images/bookatask.jpg");
+}
+.tasker-7 {
+  background: url("../images/bookatask.jpg");
+}
+.tasker-8 {
+  background: url("../images/bookatask.jpg");
+}
+.tasker-9 {
+  background: url("../images/bookatask.jpg");
+}
+.tasker-info {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.tasker-info h2 {
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.card p {
+  padding: 10px;
+  font-size: 14px;
+}
+.skills {
+  border-top: 1px solid #305973;
+
+  border-radius: 10%;
+  font-weight: bold;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.dollar-sign {
+  color: #f0632f;
+}
+
+.box img {
+  width: 250px;
+  height: auto;
+}
+h4 {
+  font-size: 16px;
+  padding-left: 10px;
+}
+.request {
+  padding: 10px;
+  text-align: center;
+}
+.request a {
+  padding: 10px;
+  background-color: #ef7e56;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 150ms all ease-in-out;
+}
+.request a:hover {
+  background-color: #f0632f;
+}

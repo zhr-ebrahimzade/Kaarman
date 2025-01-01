@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #222831;
+}
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar {
+  background: #222831;
+}
+.home {
+  background-color: transparent;
+  border-radius: 10px;
+  border: 2px solid white;
+  padding: 8px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 10px;
+  transition: 200ms ease-in-out;
+}
+
+.home:hover {
+  background-color: white;
+  color: #222831;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+/* An optional height of the navbar AFTER scroll */
+.navbar.navbar-scroll.navbar-scrolled {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 78vh;
+}

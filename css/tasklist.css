@@ -1,0 +1,268 @@
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body {
+  background-color: white;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.search-container {
+  margin: 1em 0;
+}
+.search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #305973;
+  padding: 1em 0.3em;
+}
+.search-container input:focus {
+  border-bottom-color: #ef7e56;
+}
+.search-container button {
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  background-color: #ef7e56;
+  color: white;
+  font-weight: bold;
+}
+.search-container button:hover {
+  padding: 1em 2em;
+  margin-bottom: 1em;
+  border-radius: 5px;
+  background-color: #dd5422;
+  color: white;
+  font-weight: bold;
+  transition: 150ms all ease-in-out;
+}
+
+
+#tasks {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em;
+}
+.card {
+  max-width: 18em;
+  padding: 1em;
+  border-radius: 5px;
+  box-sizing: 1em 2em 2.5em rgba(1, 2, 68, 0.8);
+}
+.imageContainer {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+.container {
+  padding-top: 1em;
+  color: #222831;
+}
+.container h5 {
+  font-weight: 500;
+}
+
+ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+body {
+  background-color: white;
+}
+/* NAVBAr */
+.logo {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+.navbar {
+  background: #222831;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 100px auto;
+}
+#search-container {
+  margin: 1em 0;
+}
+#search-container input {
+  background-color: transparent;
+  width: 40%;
+  border-bottom: 2px solid #222831;
+  padding: 1em 0.3em;
+}
+#search-container input:focus {
+  border-bottom-color: #305973;
+}
+#search-container button {
+  padding: 1em 2em;
+  margin-left: 1em;
+  background-color: #ef7e56;
+  color: #ffffff;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  border-radius: 5px;
+  margin-top: 0.5em;
+
+  transition: 150ms all ease-in-out;
+}
+
+#search-container button:hover {
+  background-color: #dc511f;
+}
+.button-value {
+  border: 2px solid #ef7e56;
+  padding: 1em 2.2em;
+  border-radius: 3em;
+  background-color: transparent;
+  color: #110f29;
+  cursor: pointer;
+}
+.active {
+  background-color: #ef7e56;
+  color: #ffffff;
+}
+.button-value:hover {
+  border: 2px solid #e94306;
+}
+.all-btn {
+  transition: 150ms all ease-in-out;
+  background-color: #ef7e56;
+  color: white;
+}
+.all-btn:hover {
+  background-color: #dc511f;
+  color: white;
+}
+/* #tasks {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+.card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+.image-container {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  font-weight: 500;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #tasks {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
+ */
+#products {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1.5em;
+  padding: 2em 0;
+}
+.card {
+  background-color: #ffffff;
+  max-width: 18em;
+  margin-top: 1em;
+  padding: 1em;
+  border-radius: 5px;
+  box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
+}
+.image-container {
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  object-fit: contain;
+  height: 15em;
+}
+.container {
+  padding-top: 1em;
+  color: #110f29;
+}
+.container h5 {
+  /*   font-weight: 500; */
+  font-weight: bold;
+  font-size: 16px;
+  color: #222831;
+}
+.container h6 {
+  color: #305973;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.goToTaskers {
+  text-decoration: none;
+  background-color: #ef7e56;
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  transition: 150ms all ease-in-out;
+}
+.goToTaskers:hover {
+  background-color: #e94306;
+  color: white;
+}
+.hide {
+  display: none;
+}
+@media screen and (max-width: 720px) {
+  img {
+    max-width: 100%;
+    object-fit: contain;
+    height: 10em;
+  }
+  .card {
+    max-width: 10em;
+    margin-top: 1em;
+  }
+  #products {
+    grid-template-columns: auto auto;
+    grid-column-gap: 1em;
+  }
+}
